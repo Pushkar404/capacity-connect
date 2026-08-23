@@ -1,0 +1,41 @@
+.profile-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 25px;
+  margin: 25px 0;
+}
+
+.profile-card h2 {
+  margin-top: 0;
+}
+
+.profile-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 20px 0 30px;
+}
+
+.profile-stats > div {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.profile-stats p {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.skills {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.skills span {
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 8px 14px;
+}
