@@ -1,28 +1,21 @@
-import { useEffect, useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import PublicLayout from "./layouts/PublicLayout";
 
 function App() {
-  const [courses, setCourses] = useState([]);
-
-  useEffect(() => {
-    fetch("http://localhost:5000/api/courses")
-      .then((response) => response.json())
-      .then((data) => setCourses(data))
-      .catch((error) => console.error(error));
-  }, []);
-
   return (
-    <div>
-      <h1>CAPACITY CONNECT</h1>
-
-      <h2>Available Courses</h2>
-
-      {courses.map((course) => (
-        <div key={course.id}>
-          <h3>{course.title}</h3>
-          <p>{course.description}</p>
-        </div>
-      ))}
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<PublicLayout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
