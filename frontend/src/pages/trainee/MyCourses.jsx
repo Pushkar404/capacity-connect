@@ -2,13 +2,15 @@ import courses, { myCourses } from "../../data/courses";
 import CourseCard from "../../components/CourseCard";
 
 import "../../css/MyCourses.css";
+import PageHeader from "../../components/PageHeader";
 
 function MyCourses() {
   return (
     <div className="my-courses">
-      <h1>My Courses</h1>
-
-      <p>Courses you are currently enrolled in.</p>
+      <PageHeader
+        title="My Courses"
+        description="Courses you are currently enrolled in."
+      />
 
       <div className="courses-grid">
         {myCourses.map((enrollment) => {

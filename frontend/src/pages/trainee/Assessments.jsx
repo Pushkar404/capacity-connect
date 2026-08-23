@@ -2,12 +2,15 @@ import courses, { upcomingAssessments } from "../../data/courses";
 
 import "../../css/Assessments.css";
 
+import PageHeader from "../../components/PageHeader";
+
 function Assessments() {
   return (
     <div className="assessments">
-      <h1>Assessments</h1>
-
-      <p>View your upcoming assessments and tests.</p>
+      <PageHeader
+        title="Assessments"
+        description="View your upcoming assessments and tests."
+      />
 
       <div className="assessment-list">
         {upcomingAssessments.map((assessment) => {
