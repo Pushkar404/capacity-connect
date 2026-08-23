@@ -1,0 +1,41 @@
+.trainer-profile-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 25px;
+  margin: 25px 0;
+}
+
+.trainer-profile-card h2 {
+  margin-top: 0;
+}
+
+.trainer-profile-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 20px 0 30px;
+}
+
+.trainer-profile-stats > div {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.trainer-profile-stats p {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.trainer-expertise {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.trainer-expertise span {
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 8px 14px;
+}

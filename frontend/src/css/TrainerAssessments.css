@@ -1,0 +1,31 @@
+.trainer-assessments > button {
+  margin: 20px 0 30px;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.trainer-assessment-list {
+  display: grid;
+  gap: 20px;
+}
+
+.trainer-assessment-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.trainer-assessment-card h2 {
+  margin-top: 0;
+}
+
+.assessment-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.assessment-actions button {
+  padding: 8px 14px;
+  cursor: pointer;
+}

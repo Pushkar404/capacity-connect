@@ -1,0 +1,35 @@
+.admin-header {
+  padding: 20px 40px;
+  border-bottom: 1px solid #ddd;
+}
+
+.admin-container {
+  display: flex;
+  min-height: calc(100vh - 80px);
+}
+
+.admin-sidebar {
+  width: 240px;
+  padding: 30px 20px;
+  border-right: 1px solid #ddd;
+}
+
+.admin-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.admin-nav a {
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.admin-nav a.active {
+  font-weight: bold;
+}
+
+.admin-content {
+  flex: 1;
+  padding: 40px;
+}

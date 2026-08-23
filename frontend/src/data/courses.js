@@ -95,3 +95,136 @@ export const traineeProfile = {
   assessmentsCompleted: 5,
   skills: ["JavaScript", "React", "Node.js", "Database Management"],
 };
+
+export const trainerCourses = [
+  {
+    courseId: 1,
+    learners: 42,
+    status: "Published",
+  },
+  {
+    courseId: 2,
+    learners: 65,
+    status: "Published",
+  },
+  {
+    courseId: 3,
+    learners: 38,
+    status: "Draft",
+  },
+];
+
+export const trainerActivity = [
+  {
+    id: 1,
+    message: "Rahul enrolled in Operating Systems",
+    time: "10 minutes ago",
+  },
+  {
+    id: 2,
+    message: "Priya completed Web Development assessment",
+    time: "1 hour ago",
+  },
+  {
+    id: 3,
+    message: "Ankit enrolled in Database Management",
+    time: "3 hours ago",
+  },
+];
+export const trainerAssessments = [
+  {
+    id: 1,
+    courseId: 1,
+    title: "Operating Systems Assessment",
+    questions: 20,
+    duration: "30 minutes",
+    status: "Published",
+  },
+  {
+    id: 2,
+    courseId: 2,
+    title: "Web Development Quiz",
+    questions: 15,
+    duration: "20 minutes",
+    status: "Draft",
+  },
+  {
+    id: 3,
+    courseId: 3,
+    title: "Database Management Test",
+    questions: 25,
+    duration: "40 minutes",
+    status: "Published",
+  },
+];
+
+export const trainerProfile = {
+  name: "Rahul Sharma",
+  email: "rahul@example.com",
+  role: "Trainer",
+  department: "Computer Science",
+  organization: "Capacity Connect",
+  coursesCreated: 3,
+  totalLearners: 145,
+  assessmentsCreated: 3,
+  expertise: ["Operating Systems", "Web Development", "Database Management"],
+};
+export const adminStats = {
+  totalUsers: 250,
+  totalLearners: 210,
+  totalTrainers: 40,
+  totalCourses: 12,
+};
+
+export const adminActivity = [
+  {
+    id: 1,
+    message: "New user registered",
+    time: "15 minutes ago",
+  },
+  {
+    id: 2,
+    message: "Operating Systems course was published",
+    time: "1 hour ago",
+  },
+  {
+    id: 3,
+    message: "New assessment created",
+    time: "2 hours ago",
+  },
+  {
+    id: 4,
+    message: "Trainer profile updated",
+    time: "4 hours ago",
+  },
+];
+export const adminUsers = [
+  {
+    id: 1,
+    name: "Aman Kumar",
+    email: "aman@example.com",
+    role: "Trainee",
+    status: "Active",
+  },
+  {
+    id: 2,
+    name: "Rahul Sharma",
+    email: "rahul@example.com",
+    role: "Trainer",
+    status: "Active",
+  },
+  {
+    id: 3,
+    name: "Priya Singh",
+    email: "priya@example.com",
+    role: "Trainee",
+    status: "Active",
+  },
+  {
+    id: 4,
+    name: "Ankit Kumar",
+    email: "ankit@example.com",
+    role: "Trainer",
+    status: "Inactive",
+  },
+];

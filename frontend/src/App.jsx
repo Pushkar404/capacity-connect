@@ -18,6 +18,14 @@ import CreateCourse from "./pages/trainer/CreateCourse";
 import TrainerAssessments from "./pages/trainer/Assessments";
 import TrainerProfile from "./pages/trainer/Profile";
 
+import AdminLayout from "./layouts/AdminLayout";
+
+import AdminDashboard from "./pages/admin/Dashboard";
+import AdminUsers from "./pages/admin/Users";
+import AdminCourses from "./pages/admin/Courses";
+import AdminAnnouncements from "./pages/admin/Announcements";
+import CompetencyMapping from "./pages/admin/CompetencyMapping";
+
 function App() {
   return (
     <BrowserRouter>
@@ -45,6 +53,17 @@ function App() {
           <Route path="assessments" element={<TrainerAssessments />} />
 
           <Route path="profile" element={<TrainerProfile />} />
+        </Route>
+        <Route path="/admin" element={<AdminLayout />}>
+          <Route index element={<AdminDashboard />} />
+
+          <Route path="users" element={<AdminUsers />} />
+
+          <Route path="courses" element={<AdminCourses />} />
+
+          <Route path="announcements" element={<AdminAnnouncements />} />
+
+          <Route path="competency-mapping" element={<CompetencyMapping />} />
         </Route>
       </Routes>
     </BrowserRouter>

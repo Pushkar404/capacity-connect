@@ -1,0 +1,32 @@
+.user-search {
+  margin: 25px 0;
+}
+
+.user-search input {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font: inherit;
+}
+
+.users-table-container {
+  overflow-x: auto;
+}
+
+.users-table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.users-table-container th,
+.users-table-container td {
+  text-align: left;
+  padding: 14px;
+  border-bottom: 1px solid #ddd;
+}
+
+.users-table-container th {
+  font-weight: bold;
+}
