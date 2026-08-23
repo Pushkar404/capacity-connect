@@ -9,6 +9,7 @@ import TraineeCourses from "./pages/trainee/Courses";
 import TraineeMyCourses from "./pages/trainee/MyCourses";
 import TraineeAssessments from "./pages/trainee/Assessments";
 import TraineeProfile from "./pages/trainee/Profile";
+import TraineeLayout from "./layouts/TraineeLayout";
 
 function App() {
   return (
@@ -18,11 +19,14 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/trainee" element={<TraineeDashboard />} />
-          <Route path="/trainee/courses" element={<TraineeCourses />} />
-          <Route path="/trainee/my-courses" element={<TraineeMyCourses />} />
-          <Route path="/trainee/assessments" element={<TraineeAssessments />} />
-          <Route path="/trainee/profile" element={<TraineeProfile />} />
+
+          <Route path="/trainee" element={<TraineeLayout />}>
+            <Route index element={<TraineeDashboard />} />
+            <Route path="courses" element={<TraineeCourses />} />
+            <Route path="my-courses" element={<TraineeMyCourses />} />
+            <Route path="assessments" element={<TraineeAssessments />} />
+            <Route path="profile" element={<TraineeProfile />} />
+          </Route>
         </Route>
       </Routes>
     </BrowserRouter>

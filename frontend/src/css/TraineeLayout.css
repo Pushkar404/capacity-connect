@@ -1,0 +1,35 @@
+.trainee-header {
+  padding: 20px 40px;
+  border-bottom: 1px solid #ddd;
+}
+
+.trainee-container {
+  display: flex;
+  min-height: calc(100vh - 80px);
+}
+
+.trainee-sidebar {
+  width: 220px;
+  padding: 30px 20px;
+  border-right: 1px solid #ddd;
+}
+
+.trainee-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.trainee-nav a {
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.trainee-nav a.active {
+  font-weight: bold;
+}
+
+.trainee-content {
+  flex: 1;
+  padding: 40px;
+}
