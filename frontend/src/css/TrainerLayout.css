@@ -1,0 +1,35 @@
+.trainer-header {
+  padding: 20px 40px;
+  border-bottom: 1px solid #ddd;
+}
+
+.trainer-container {
+  display: flex;
+  min-height: calc(100vh - 80px);
+}
+
+.trainer-sidebar {
+  width: 220px;
+  padding: 30px 20px;
+  border-right: 1px solid #ddd;
+}
+
+.trainer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.trainer-nav a {
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.trainer-nav a.active {
+  font-weight: bold;
+}
+
+.trainer-content {
+  flex: 1;
+  padding: 40px;
+}
