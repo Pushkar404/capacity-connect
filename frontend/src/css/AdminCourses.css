@@ -1,0 +1,37 @@
+.course-filters {
+  display: flex;
+  gap: 15px;
+  margin: 25px 0;
+}
+
+.course-filters input,
+.course-filters select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font: inherit;
+}
+
+.course-filters input {
+  width: 400px;
+}
+
+.courses-table-container {
+  overflow-x: auto;
+}
+
+.courses-table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.courses-table-container th,
+.courses-table-container td {
+  text-align: left;
+  padding: 14px;
+  border-bottom: 1px solid #ddd;
+}
+
+.courses-table-container th {
+  font-weight: bold;
+}

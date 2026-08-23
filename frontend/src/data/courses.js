@@ -228,3 +228,34 @@ export const adminUsers = [
     status: "Inactive",
   },
 ];
+
+export const adminCourses = [
+  {
+    id: 1,
+    title: "Operating Systems",
+    trainer: "Rahul Sharma",
+    learners: 42,
+    status: "Published",
+  },
+  {
+    id: 2,
+    title: "Web Development",
+    trainer: "Ankit Kumar",
+    learners: 65,
+    status: "Published",
+  },
+  {
+    id: 3,
+    title: "Database Management",
+    trainer: "Rahul Sharma",
+    learners: 38,
+    status: "Draft",
+  },
+  {
+    id: 4,
+    title: "Computer Networks",
+    trainer: "Priya Singh",
+    learners: 25,
+    status: "Published",
+  },
+];
