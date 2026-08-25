@@ -1,0 +1,44 @@
+.add-competency-button {
+  margin: 20px 0 30px;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.competency-list {
+  display: grid;
+  gap: 20px;
+}
+
+.competency-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.competency-card h2 {
+  margin-top: 0;
+}
+
+.competency-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.competency-tags span {
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 8px 14px;
+}
+
+.competency-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.competency-actions button {
+  padding: 8px 14px;
+  cursor: pointer;
+}

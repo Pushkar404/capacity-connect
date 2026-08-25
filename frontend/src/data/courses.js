@@ -286,3 +286,25 @@ export const adminAnnouncements = [
     status: "Draft",
   },
 ];
+export const competencyMappings = [
+  {
+    id: 1,
+    course: "Operating Systems",
+    competencies: ["Process Management", "Memory Management", "File Systems"],
+  },
+  {
+    id: 2,
+    course: "Web Development",
+    competencies: ["HTML", "CSS", "JavaScript", "React"],
+  },
+  {
+    id: 3,
+    course: "Database Management",
+    competencies: ["SQL", "Database Design", "Data Modeling"],
+  },
+  {
+    id: 4,
+    course: "Leadership Skills",
+    competencies: ["Communication", "Team Management", "Decision Making"],
+  },
+];
