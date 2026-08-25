@@ -1,6 +1,5 @@
 const express = require("express");
 const cors = require("cors");
-
 const courseRoutes = require("./routes/courseRoutes");
 
 const app = express();
@@ -19,6 +18,12 @@ const PORT = 5000;
 
 app.get("/", (req, res) => {
   res.send("CAPACITY CONNECT BACKEND IS RUNNING");
+});
+
+app.get("/api/health", (req, res) => {
+  res.json({
+    message: "Capacity Connect API is running",
+  });
 });
 
 app.listen(PORT, () => {
