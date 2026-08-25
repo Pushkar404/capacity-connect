@@ -10,15 +10,22 @@ function Courses() {
   const [search, setSearch] = useState("");
   const [status, setStatus] = useState("All");
 
+  console.log("ADMIN COURSES:", adminCourses);
+
   const filteredCourses = adminCourses.filter((course) => {
-    const matchesSearch = course.title
-      .toLowerCase()
-      .includes(search.toLowerCase());
+    const searchTerm = search.toLowerCase();
+
+    const matchesSearch =
+      course.title.toLowerCase().includes(searchTerm) ||
+      course.trainer.toLowerCase().includes(searchTerm) ||
+      course.status.toLowerCase().includes(searchTerm) ||
+      course.learners.toString().includes(searchTerm);
 
     const matchesStatus = status === "All" || course.status === status;
 
     return matchesSearch && matchesStatus;
   });
+  console.log("FILTERED COURSES:", filteredCourses);
 
   return (
     <div className="admin-courses">

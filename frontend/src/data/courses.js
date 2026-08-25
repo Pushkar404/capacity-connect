@@ -259,3 +259,30 @@ export const adminCourses = [
     status: "Published",
   },
 ];
+export const adminAnnouncements = [
+  {
+    id: 1,
+    title: "New Training Program",
+    message: "A new training program is now available on Capacity Connect.",
+    audience: "All Users",
+    date: "25 August 2026",
+    status: "Published",
+  },
+  {
+    id: 2,
+    title: "Web Development Assessment",
+    message: "The Web Development assessment will be available this week.",
+    audience: "Trainees",
+    date: "24 August 2026",
+    status: "Published",
+  },
+  {
+    id: 3,
+    title: "Trainer Meeting",
+    message:
+      "All trainers are requested to attend the upcoming platform meeting.",
+    audience: "Trainers",
+    date: "23 August 2026",
+    status: "Draft",
+  },
+];
